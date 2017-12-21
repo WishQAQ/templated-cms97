@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="化工泵直销,山东化工泵,山东氟塑料泵,山东氟塑料泵,临沂化工泵" />
+<meta name="description" content="临沂龙泉泵阀制造有限公司位于山东省临沂市，是安徽泵阀设备有限公司的山东分公司，是一家集产品研发、生产和销售于一体的高新技术改造传统产业企业。公司主营化工泵直销,山东化工泵,山东氟塑料泵,山东氟塑料泵,临沂化工泵，联系电话：13884627350" />
+{dede:include filename="head.htm"/}
+<div class="banner_on">
+<img src="{dede:global.cfg_templets_skin/}/images/server.jpg" />
+            </div>
+<div class="con">
+{dede:include filename="list_left.htm"/}
+    <div class="fr">
+    	<div class="title">{dede:field.typename/}<span>当前位置：{dede:field name='position'/}</span></div>
+        <div class="nr">
+            <div class="news-body">
+                <h1>{dede:field.title/}</h1>
+                <h2><small>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/} 作者：{dede:field.writer/} 点击:<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>次</small></h2>
+                <div class="newsdetail">{dede:field.body/}</div>
+            </div>
+            <div class="context">
+                <ul>
+                    <li>{dede:prenext get='pre'/}</li>
+                    <li>{dede:prenext get='next'/}</li>
+                </ul>
+            </div>
+        </div>
+    </div>   
+    
+</div>
+
+{dede:include filename="footer.htm"/}
+
+
+
+</body>
+</html>
